@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Material Permisos</string>
+
+    <string name="permission_rational_read_calendar">Permite que la aplicación consulte todos los eventos de calendario almacenados en el dispositivo, incluidos los de amigos y compañeros de trabajo.</string>
+    <string name="permission_rational_write_calendar">Permite que la aplicación agregue, remueva y cambie eventos que se pueden modificar en el dispositivo, incluidos los de amigos o compañeros de trabajo.</string>
+
+    <string name="permission_rational_camera">Permite que la aplicación saque fotos o grabe videos con la cámara.</string>
+
+    <string name="permission_rational_read_contacts">Permite que la aplicación consulte información sobre contactos almacenados en el dispositivo, incluida la frecuencia con la que los has llamado, les has enviado correos o te has puesto en contacto con ellos de otro modo.</string>
+    <string name="permission_rational_write_contacts">Permite que la aplicación modifique los datos de los contactos almacenados en el dispositivo, incluida la frecuencia con la que los has llamado, les has enviado correos o te has puesto en contacto con ellos de otro modo.</string>
+    <string name="permission_rational_get_accounts">Permite que la aplicación obtenga una lista de las cuentas reconocidas por el dispositivo, entre las que se pueden incluir las cuentas creadas por las aplicaciones que hayas instalado.</string>
+
+    <string name="permission_rational_access_fine_location">Permite a la aplicación obtener tu ubicación precisa mediante el Sistema de Posicionamiento Global (GPS) o las fuentes de ubicación de red, como las torres de celulares y Wi-Fi.</string>
+    <string name="permission_rational_access_coarse_location">Permite a la aplicación obtener tu ubicación aproximada. Esta ubicación deriva de los servicios de ubicación que usan fuentes de ubicación de red, como torres de celulares y Wi-Fi.</string>
+
+    <string name="permission_rational_record_audio">Permite que la aplicación grabe audio con el micrófono.</string>
+
+    <string name="permission_rational_read_phone_state">Permite que la aplicación acceda a las funciones de teléfono del dispositivo.</string>
+    <string name="permission_rational_call_phone">Permite que la aplicación haga llamadas a números de teléfono sin intervención del usuario. Ten en cuenta que las aplicaciones no pueden usar este servicio para realizar llamadas a números de emergencia.</string>
+    <string name="permission_rational_read_call_log">Permite que la aplicación consulte el registro de llamadas del dispositivo, incluidos los datos sobre llamadas entrantes y salientes.</string>
+    <string name="permission_rational_write_call_log">Permite que la aplicación modifique el registro de llamadas del dispositivo, incluidos los datos sobre llamadas entrantes y salientes.</string>
+    <string name="permission_rational_add_voice_mail">Permite que la aplicación agregue mensajes a la bandeja de entrada de tu buzón de voz.</string>
+    <string name="permission_rational_use_sip">Permite que la aplicación realice y reciba llamadas SIP.</string>
+    <string name="permission_rational_process_outgoing_calls">Permite que la aplicación vea el número marcado al realizar una llamada.</string>
+
+    <string name="permission_rational_body_sensors">Permite que la aplicación acceda a datos de sensores que controlan tu condición física, como el ritmo cardíaco.</string>
+
+    <string name="permission_rational_send_sms">Permite que la aplicación envíe mensajes SMS.</string>
+    <string name="permission_rational_receive_sms">Permite que la aplicación reciba y procese mensajes SMS.</string>
+    <string name="permission_rational_read_sms">Permite que la aplicación consulte los mensajes SMS almacenados en el dispositivo o en la tarjeta SIM.</string>
+    <string name="permission_rational_receive_wap_push">Permite que la aplicación reciba y procese mensajes WAP.</string>
+    <string name="permission_rational_receive_mms">Permite que la aplicación reciba y procese mensajes MMS.</string>
+
+    <string name="permission_rational_read_external_storage">Permite que la aplicación lea el contenido de la tarjeta SD.</string>
+    <string name="permission_rational_write_external_storage">Permite que la aplicación guarde en la tarjeta SD.</string>
+
+    <string name="permission_not_now">Mas tarde</string>
+    <string name="permission_continue">Continuar</string>
+
+    <string name="permission_got_to_settings">\n\nSelecciona \"Permisos\" en la información de la aplicación para volver a habilitarla. \n\n¿Deseas hacerlo ahora?</string>
+</resources>

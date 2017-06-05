@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="permission_dialog_theme" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="permission_button_style" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/permission_bg_btn</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/permission_button_text_color</item>
+        <item name="android:textSize">@dimen/permission_dialog_buttons_text_size</item>
+        <item name="android:padding">@dimen/permission_dialog_buttons_padding</item>
+    </style>
+
+</resources>

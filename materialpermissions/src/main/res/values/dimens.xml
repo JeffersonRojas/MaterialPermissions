@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="permission_dialog_height_icon">100dp</dimen>
+    <dimen name="permission_dialog_margin">33dp</dimen>
+    <dimen name="permission_dialog_rationale_text_size">14sp</dimen>
+    <dimen name="permission_dialog_buttons_text_size">14sp</dimen>
+    <dimen name="permission_dialog_rationale_text_margin">10dp</dimen>
+    <dimen name="permission_dialog_buttons_margin">8dp</dimen>
+    <dimen name="permission_dialog_corners">5dp</dimen>
+    <dimen name="permission_dialog_buttons_padding">5dp</dimen>
+</resources>

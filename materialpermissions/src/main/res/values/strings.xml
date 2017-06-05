@@ -1,3 +1,42 @@
 <resources>
-    <string name="jr_mp_name">Material Permissions</string>
+    <string name="permission_rational_text_font" translatable="false">Roboto-Light.ttf</string>
+    <string name="permission_button_text_font" translatable="false">Roboto-Medium.ttf</string>
+
+    <string name="permission_rational_read_calendar">Allows the app to read all calendar events stored on your phone, including those of friends or co-workers.</string>
+    <string name="permission_rational_write_calendar">Allows the app to add, remove, change events that you can modify on your phone, including those of friends or co-workers.</string>
+
+    <string name="permission_rational_camera">Allows the app to take pictures and videos with the camera.</string>
+
+    <string name="permission_rational_read_contacts">Allows the app to read data about your contacts stored on your phone, including the frequency with which you\'ve called, emailed, or communicated in other ways with specific individuals.</string>
+    <string name="permission_rational_write_contacts">Allows the app to modify the data about your contacts stored on your phone, including the frequency with which you\'ve called, emailed, or communicated in other ways with specific contacts.</string>
+    <string name="permission_rational_get_accounts">Allows the app to get the list of accounts known by the phone. This may include any accounts created by applications you have installed.</string>
+
+    <string name="permission_rational_access_fine_location">Allows the app to get your precise location using the Global Positioning System (GPS) or network location sources such as cell towers and Wi-Fi.</string>
+    <string name="permission_rational_access_coarse_location">Allows the app to get your approximate location. This location is derived by location services using network location sources such as cell towers and Wi-Fi.</string>
+
+    <string name="permission_rational_record_audio">Allows the app to record audio with the microphone.</string>
+
+    <string name="permission_rational_read_phone_state">Allows the app to access the phone features of the device.</string>
+    <string name="permission_rational_call_phone">Allows the app to call phone numbers without your intervention. Note that this doesn\'t allow the app to call emergency numbers.</string>
+    <string name="permission_rational_read_call_log">Allows the app to read your phone\'s call log, including data about incoming and outgoing calls.</string>
+    <string name="permission_rational_write_call_log">Allows the app to modify your phone\'s call log, including data about incoming and outgoing calls.</string>
+    <string name="permission_rational_add_voice_mail">Allows the app to add messages to your voice mail inbox.</string>
+    <string name="permission_rational_use_sip">Allows the app to make and receive SIP calls.</string>
+    <string name="permission_rational_process_outgoing_calls">Allows the app to see the number being dialed during an outgoing call with the option to redirect the call to a different number or abort the call altogether.</string>
+
+    <string name="permission_rational_body_sensors">Allows the app to access data from sensors that monitor your physical condition, such as your heart rate.</string>
+
+    <string name="permission_rational_send_sms">Allows the app to send SMS messages.</string>
+    <string name="permission_rational_receive_sms">Allows the app to receive and process SMS messages.</string>
+    <string name="permission_rational_read_sms">Allows the app to read SMS messages stored on your phone or SIM card.</string>
+    <string name="permission_rational_receive_wap_push">Allows the app to receive and process WAP messages.</string>
+    <string name="permission_rational_receive_mms">Allows the app to receive and process MMS messages.</string>
+
+    <string name="permission_rational_read_external_storage">Allows the app to read the contents of your SD card.</string>
+    <string name="permission_rational_write_external_storage">Allows the app to write to the SD card.</string>
+
+    <string name="permission_not_now">not now</string>
+    <string name="permission_continue">continue</string>
+
+    <string name="permission_got_to_settings">\n\nChoose \"Permissions\" in the application information to enable it. \n\nDo you want to do it now?</string>
 </resources>

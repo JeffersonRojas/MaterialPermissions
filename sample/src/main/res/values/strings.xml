@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Material Permissions</string>
+    <string name="permission_rational_text_font" translatable="false">Roboto-LightItalic.ttf</string>
+    <string name="permission_button_text_font" translatable="false">Roboto-BlackItalic.ttf</string>
 </resources>
