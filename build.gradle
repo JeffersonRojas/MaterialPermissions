@@ -2,14 +2,15 @@ buildscript {
 
     ext.versions = [
             'minSdk'        : 16,
-            'compileSdk'    : 25,
-            'buildTools'    : '25.0.3',
+            'compileSdk'    : 27,
+            'buildTools'    : '27.0.3',
 
-            'supportLibrary': '25.3.1',
-            'kotlin'        : '1.1.2-3',
+            'buildGradle'   : '3.0.1',
+            'supportLibrary': '27.0.2',
+            'kotlin'        : '1.2.20',
 
-            'releaseTag'    : '1.0.0',
-            'releaseCode'   : 1
+            'releaseTag'    : '1.0.2',
+            'releaseCode'   : 3
     ]
 
     ext.devJeffersonRojas = {
@@ -20,10 +21,11 @@ buildscript {
 
     repositories {
         jcenter()
+        google()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.2'
+        classpath "com.android.tools.build:gradle:$versions.buildGradle"
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
@@ -33,6 +35,7 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        google()
         maven { url 'https://dl.bintray.com/fejerson108/Android' }
     }
 }
