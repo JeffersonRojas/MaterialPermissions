@@ -1,25 +1,24 @@
 package com.github.jeffersonrojas.materialpermissions.sample
 
+import android.Manifest
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import com.github.jeffersonrojas.materialpermissions.library.PermissionManager
-import com.github.jeffersonrojas.materialpermissions.library.Permissions
-
-
 
 class SampleActivity : AppCompatActivity() {
 
-    lateinit var permissionManager: PermissionManager
+    private lateinit var permissionManager: PermissionManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sample)
         permissionManager = PermissionManager(this)
-        permissionManager.addPermission(Permissions.ACCESS_COARSE_LOCATION)
-        permissionManager.requestCode = 99
+        permissionManager.autoRequestPermission = true
+        permissionManager.addPermission(Manifest.permission.ACCESS_COARSE_LOCATION)
+        permissionManager.addPermission(Manifest.permission.CAMERA)
         if (permissionManager.havePermission()) {
-            Log.i("tag","permiso aprovado")
+            Log.i("tag", "permiso aprovado")
         } else {
             permissionManager.requestPermissions()
         }
@@ -27,8 +26,8 @@ class SampleActivity : AppCompatActivity() {
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (permissionManager.permissionsResult(requestCode, grantResults)) {
-            Log.i("tag","permiso aprovado")
+        if (permissionManager.onRequestPermissionsResult(requestCode, permissions, grantResults)) {
+            Log.i("tag", "permiso aprovado")
         }
     }
 
