@@ -1,7 +1,4 @@
 <resources>
-    <string name="permission_rational_text_font" translatable="false">Roboto-Light.ttf</string>
-    <string name="permission_button_text_font" translatable="false">Roboto-Medium.ttf</string>
-
     <string name="permission_rational_read_calendar">Allows the app to read all calendar events stored on your phone, including those of friends or co-workers.</string>
     <string name="permission_rational_write_calendar">Allows the app to add, remove, change events that you can modify on your phone, including those of friends or co-workers.</string>
 
@@ -39,4 +36,5 @@
     <string name="permission_continue">continue</string>
 
     <string name="permission_got_to_settings">\n\nChoose \"Permissions\" in the application information to enable it. \n\nDo you want to do it now?</string>
+    <string name="permission_position_indicator">of</string>
 </resources>

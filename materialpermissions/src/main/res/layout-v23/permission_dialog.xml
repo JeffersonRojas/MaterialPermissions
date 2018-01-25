@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/transparent">
+    android:layout_height="wrap_content">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:layout_marginEnd="@dimen/permission_dialog_margin"
         android:layout_marginStart="@dimen/permission_dialog_margin"
         app:cardCornerRadius="@dimen/permission_dialog_corners">
@@ -47,24 +45,36 @@
                 android:paddingEnd="@dimen/permission_dialog_buttons_margin"
                 android:paddingStart="@dimen/permission_dialog_buttons_margin">
 
+                <TextView
+                    android:id="@+id/permission_tv_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/permission_secondary_text_color"
+                    android:textSize="@dimen/permission_dialog_position_text_size"
+                    android:layout_margin="@dimen/permission_dialog_position_text_margin" />
+
                 <View
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/permission_btn_later"
-                    style="@style/permission_button_style"
-                    android:text="@string/permission_not_now" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/permission_not_now"
+                    android:theme="@style/permission_button_style" />
 
                 <View
                     android:layout_width="@dimen/permission_dialog_buttons_margin"
-                    android:layout_height="0dp"/>
+                    android:layout_height="0dp" />
 
                 <Button
                     android:id="@+id/permission_btn_continue"
-                    style="@style/permission_button_style"
-                    android:text="@string/permission_continue" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/permission_continue"
+                    android:theme="@style/permission_button_style" />
 
             </LinearLayout>
 
@@ -72,4 +82,4 @@
 
     </android.support.v7.widget.CardView>
 
-</RelativeLayout>
+</FrameLayout>

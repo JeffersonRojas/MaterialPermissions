@@ -3,5 +3,6 @@
     <color name="permission_primary_color">#3F51B5</color>
     <color name="permission_secondary_color">@android:color/white</color>
     <color name="permission_primary_text_color">#212121</color>
+    <color name="permission_secondary_text_color">#616161</color>
     <color name="permission_button_text_color">@color/permission_primary_color</color>
 </resources>
