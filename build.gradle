@@ -6,8 +6,8 @@ buildscript {
             'buildTools'    : '27.0.3',
 
             'buildGradle'   : '3.0.1',
-            'supportLibrary': '27.0.2',
-            'kotlin'        : '1.2.20',
+            'supportLibrary': '27.1.0',
+            'kotlin'        : '1.2.30',
 
             'releaseTag'    : '1.0.2',
             'releaseCode'   : 3
