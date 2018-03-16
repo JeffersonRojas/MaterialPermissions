@@ -1,29 +1,22 @@
-language: android
-
-jdk:
-  - oraclejdk8
-
-install:
-  - echo yes | sdkmanager "tools" &>/dev/null
-  - echo yes | sdkmanager "platform-tools" &>/dev/null
-  - echo yes | sdkmanager "build-tools;27.0.3" &>/dev/null
-  - echo yes | sdkmanager "platforms;android-27" &>/dev/null
-
-script:
-  - ./gradlew clean testDebug lintDebug jacocoDebugReport coveralls -Dscan --stacktrace
-
-branches:
-  except:
-    - gh-pages
-
 sudo: false
 
-before_cache:
-  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
-  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+language: android
 
-cache:
-  directories:
-    - $HOME/.gradle/caches/
-    - $HOME/.gradle/wrapper/
-    - $HOME/.android/build-cache
+jdk: oraclejdk8
+
+android:
+  components:
+    - platform-tools
+    - tools # to get the new `repository-11.xml`
+    - tools # see https://github.com/travis-ci/travis-ci/issues/6040#issuecomment-219367943)
+    - build-tools-27.0.3
+    - android-27
+    - extra-android-m2repository
+    - extra-google-m2repository
+    - extra-android-support
+    - extra-google-google_play_services
+
+before_script:
+    - chmod +x gradlew
+    
+script: "./gradlew testDebug -PdisablePreDex"
