@@ -23,7 +23,7 @@ class PermissionManager(val activity: AppCompatActivity) {
 
     var autoRequestPermission: Boolean = true
 
-    private var onClickLater: () -> Unit = {}
+    var onClickLater: () -> Unit = {}
 
     private var flagGoToSettings: Boolean = false
 

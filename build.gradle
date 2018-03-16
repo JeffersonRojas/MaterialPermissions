@@ -9,8 +9,8 @@ buildscript {
             'supportLibrary': '27.1.0',
             'kotlin'        : '1.2.30',
 
-            'releaseTag'    : '1.0.2',
-            'releaseCode'   : 3
+            'releaseTag'    : '1.0.4',
+            'releaseCode'   : 5
     ]
 
     ext.devJeffersonRojas = {
