@@ -23,6 +23,8 @@ class PermissionManager(val activity: AppCompatActivity) {
 
     var autoRequestPermission: Boolean = true
 
+    private var onClickLater: () -> Unit = {}
+
     private var flagGoToSettings: Boolean = false
 
     private var time: Long = 0
@@ -54,7 +56,7 @@ class PermissionManager(val activity: AppCompatActivity) {
         time = Calendar.getInstance().timeInMillis
         if (listPermissions.any { ActivityCompat.shouldShowRequestPermissionRationale(activity, it) } || flagGoToSettings) {
             val permissionsDenied = getDeniedPermissions()
-            permissionFragmentDialog.show(activity.supportFragmentManager, permissionsDenied, this::onClickContinue)
+            permissionFragmentDialog.show(activity.supportFragmentManager, permissionsDenied, this::onClickContinue, onClickLater)
         } else {
             ActivityCompat.requestPermissions(activity, listPermissions.toTypedArray(), requestCode)
         }

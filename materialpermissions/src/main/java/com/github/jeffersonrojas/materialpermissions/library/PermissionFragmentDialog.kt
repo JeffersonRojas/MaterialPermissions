@@ -19,6 +19,7 @@ import android.widget.TextView
 class PermissionFragmentDialog : DialogFragment() {
 
     private var onClickContinue: () -> Unit = {}
+    private var onClickLater: () -> Unit = {}
     private var permissions: ArrayList<PermissionModel> = ArrayList()
     private var position: Int = 0
 
@@ -26,10 +27,11 @@ class PermissionFragmentDialog : DialogFragment() {
     private lateinit var tvPosition: TextView
     private lateinit var ivPermissionIcon: ImageView
 
-    fun show(manager: FragmentManager, permissions: ArrayList<PermissionModel>, onClickContinue: () -> Unit) {
+    fun show(manager: FragmentManager, permissions: ArrayList<PermissionModel>, onClickContinue: () -> Unit, onClickLater: () -> Unit) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && permissions.isNotEmpty()) {
             this.permissions = permissions
             this.onClickContinue = onClickContinue
+            this.onClickLater = onClickLater
             isCancelable = false
             position = 0
             show(manager, PermissionFragmentDialog::class.java.simpleName)
@@ -68,6 +70,7 @@ class PermissionFragmentDialog : DialogFragment() {
     private fun onLater() {
         Handler().postDelayed({
             dismiss()
+            onClickLater()
         }, 200)
     }
 
